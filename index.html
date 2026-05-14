@@ -17,52 +17,42 @@
 <body>
     <header class="top-bar">
         <div class="logo">
-            <img src="images/logo.svg" alt="Sklénikum" class="site-logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Sklénikum" class="site-logo"></a>
         </div>
         <nav class="top-nav">
-            <a href="#">Shipping</a>
-            <a href="#">Contact us</a>
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="#greenhouses" class="nav-link">Greenhouses <i
+                            class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#polycarbonate">Polycarbonate Greenhouses</a></li>
+                        <li><a href="#glass">Glass Greenhouses</a></li>
+                        <li><a href="#lean-to">Lean-to Greenhouses</a></li>
+                        <li><a href="#mini">Mini &amp; Cold Frames</a></li>
+                        <li><a href="#custom">Custom Greenhouses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Buyer's Guide</a>
+                </li>
+            </ul>
         </nav>
+        <div class="header-actions">
+            <button class="cart-btn" aria-label="Shopping cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
     </header>
     <hr class="top-bar-divider">
-    <aside class="sidebar-menu">
-        <div class="menu-section">
-            <a href="#" class="menu-item">Greenhouses</a>
-            <ul class="submenu">
-                <li class="menu-list"><a href="#polycarbonate" class="menu-category">Polycarbonate Greenhouses</a></li>
-                <li class="menu-list"><a href="#glass" class="menu-category">Glass Greenhouses</a></li>
-                <li class="menu-list"><a href="#lean-to" class="menu-category">Lean-to Greenhouses</a></li>
-                <li class="menu-list"><a href="#mini" class="menu-category">Mini &amp; Cold Frames</a></li>
-                <li class="menu-list"><a href="#custom" class="menu-category">Custom Greenhouses</a></li>
-            </ul>
-        </div>
-        <a href="#" class="menu-item">Acessories</a>
-        <a href="#" class="menu-item">Buyer's Guide</a>
-
-        <div class="sidebar-gallery">
-            <h4 class="gallery-title">Gallery</h4>
-            <div class="gallery-grid">
-                <img src="/images/gallery/1.png" alt="Gallery image 1">
-                <img src="/images/gallery/2.png" alt="Gallery image 2">
-                <img src="/images/gallery/3.png" alt="Gallery image 3">
-                <img src="/images/gallery/4.png" alt="Gallery image 4">
-                <img src="/images/gallery/5.png" alt="Gallery image 5">
-                <img src="/images/gallery/6.png" alt="Gallery image 6">
-            </div>
-        </div>
-
-        <div class="sidebar-about">
-            <h4 class="gallery-title">About Us</h4>
-            <p class="about-text">Sklénikum was founded in 2008 by a family of passionate gardeners in the heart of Liberec. What started as a small workshop crafting custom garden structures has grown into one of the Czech Republic's leading greenhouse retailers.</p>
-            <p class="about-text">We believe every garden deserves a greenhouse — whether you tend a balcony herb garden or a sprawling market plot. That's why we offer everything from compact cold frames to full-sized glass structures, alongside our unique configure-your-own service.</p>
-            <p class="about-text">All our products are tested in our own demonstration garden and come with a minimum 5-year structural warranty.</p>
-        </div>
-    </aside>
 
     <main class="content">
         <section class="latest-hits">
-            <h2 class="slideshow-title">Latest Hits</h2>
             <div class="slideshow-container">
+                <h2 class="slideshow-title">Latest Hits</h2>
                 <div class="mySlides fade">
                     <img src="/images/latesthits/1.png" alt="Polycarbonate Greenhouse">
                     <div class="slide-caption">Premium Polycarbonate - Our Best Seller</div>
@@ -92,15 +82,59 @@
         </section>
 
         <section class="category" id="polycarbonate">
-            <h2 class="category-title">Greenhouses</h2>
+            <h2 class="category-title" id="greenhouses">Greenhouses</h2>
             <h3 class="subcategory-title">Polycarbonate</h3>
-
             <div class="product-grid">
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png" alt="Polycarbonate Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Polycarb1</h4><p class="product-price">$1000</p><hr class="card-divider"><p class="product-desc">Extra-tall reinforced structure for maximum yield.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png" alt="Polycarbonate Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Polycarb2</h4><p class="product-price">$670</p><hr class="card-divider"><p class="product-desc">Wide span model with double-layer panels for insulation.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png" alt="Polycarbonate Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Polycarb3</h4><p class="product-price">$1250</p><hr class="card-divider"><p class="product-desc">Our largest polycarbonate model. Ideal for serious growers.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png" alt="Polycarbonate Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Polycarb4</h4><p class="product-price">$890</p><hr class="card-divider"><p class="product-desc">Mid-range model with aluminium frame and sliding door.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png" alt="Polycarbonate Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Polycarb5</h4><p class="product-price">$540</p><hr class="card-divider"><p class="product-desc">Compact entry-level polycarbonate greenhouse for beginners.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png"
+                            alt="Polycarbonate Greenhouse" class="product-image"
+                            style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Polycarb1</h4>
+                    <p class="product-price">$1000</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Extra-tall reinforced structure for maximum yield.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png"
+                            alt="Polycarbonate Greenhouse" class="product-image"
+                            style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Polycarb2</h4>
+                    <p class="product-price">$670</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Wide span model with double-layer panels for insulation.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-lg"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png"
+                            alt="Polycarbonate Greenhouse" class="product-image"
+                            style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Polycarb3</h4>
+                    <p class="product-price">$1250</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Our largest polycarbonate model. Ideal for serious growers.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png"
+                            alt="Polycarbonate Greenhouse" class="product-image"
+                            style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Polycarb4</h4>
+                    <p class="product-price">$890</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Mid-range model with aluminium frame and sliding door.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/polycarbonate.png"
+                            alt="Polycarbonate Greenhouse" class="product-image"
+                            style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Polycarb5</h4>
+                    <p class="product-price">$540</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Compact entry-level polycarbonate greenhouse for beginners.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
             </div>
         </section>
 
@@ -109,13 +143,52 @@
             <h3 class="subcategory-title">Glass</h3>
 
             <div class="product-grid">
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass1</h4><p class="product-price">$1000</p><hr class="card-divider"><p class="product-desc">Extra-tall reinforced structure for maximum yield.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass2</h4><p class="product-price">$670</p><hr class="card-divider"><p class="product-desc">Classic Victorian-style glass house with ridge ventilation.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass3</h4><p class="product-price">$1500</p><hr class="card-divider"><p class="product-desc">Premium full-glass model with aluminium frame.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass4</h4><p class="product-price">$820</p><hr class="card-divider"><p class="product-desc">Toughened safety glass panels with powder-coated frame.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass5</h4><p class="product-price">$430</p><hr class="card-divider"><p class="product-desc">Entry-level glass house with louvre ventilation windows.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass6</h4><p class="product-price">$1100</p><hr class="card-divider"><p class="product-desc">Octagonal glass greenhouse — a centrepiece for any garden.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Glass7</h4><p class="product-price">$960</p><hr class="card-divider"><p class="product-desc">Wide-span 10ft glass greenhouse with gutter connection system.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
+                <article class="product-card card-lg"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Glass1</h4>
+                    <p class="product-price">$1000</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Extra-tall reinforced structure for maximum yield.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Glass2</h4>
+                    <p class="product-price">$670</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Classic Victorian-style glass house with ridge ventilation.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <div class="row-break"></div>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Glass3</h4>
+                    <p class="product-price">$1500</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Premium full-glass model with aluminium frame.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Glass4</h4>
+                    <p class="product-price">$820</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Toughened safety glass panels with powder-coated frame.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/glass.png" alt="Glass Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Glass6</h4>
+                    <p class="product-price">$1100</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Octagonal glass greenhouse — a centrepiece for any garden.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
             </div>
         </section>
 
@@ -123,10 +196,33 @@
             <h3 class="subcategory-title">Lean-to</h3>
 
             <div class="product-grid">
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Lean-to 1</h4><p class="product-price">$800</p><hr class="card-divider"><p class="product-desc">Space-saving design that attaches directly to your house wall.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Lean-to 2</h4><p class="product-price">$450</p><hr class="card-divider"><p class="product-desc">Compact lean-to with sliding door and roof vent.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Lean-to 3</h4><p class="product-price">$650</p><hr class="card-divider"><p class="product-desc">Wide lean-to model with reinforced panels for larger wall spaces.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Lean-to 4</h4><p class="product-price">$1100</p><hr class="card-divider"><p class="product-desc">Premium lean-to with double-door access and integrated guttering.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Lean-to 1</h4>
+                    <p class="product-price">$800</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Space-saving design that attaches directly to your house wall.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Lean-to 2</h4>
+                    <p class="product-price">$650</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Wide lean-to model with reinforced panels for larger wall spaces.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/lean-to.png" alt="Lean-to Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Lean-to 3</h4>
+                    <p class="product-price">$1100</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Premium lean-to with double-door access and integrated guttering.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
             </div>
         </section>
 
@@ -134,13 +230,34 @@
             <h3 class="subcategory-title">Mini & Cold Frames</h3>
 
             <div class="product-grid">
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 1</h4><p class="product-price">$120</p><hr class="card-divider"><p class="product-desc">Compact cold frame perfect for protecting seedlings.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 2</h4><p class="product-price">$85</p><hr class="card-divider"><p class="product-desc">Lightweight mini greenhouse with zippered front panel.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-md"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 3</h4><p class="product-price">$55</p><hr class="card-divider"><p class="product-desc">Extended cold frame with double-wall panels. Excellent for year-round use.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 4</h4><p class="product-price">$200</p><hr class="card-divider"><p class="product-desc">Polycarbonate cold frame with wooden base. Great insulator.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Mini 1</h4>
+                    <p class="product-price">$85</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Lightweight mini greenhouse with zippered front panel.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-md"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Mini 2</h4>
+                    <p class="product-price">$55</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Extended cold frame with double-wall panels. Excellent for year-round use.
+                    </p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
+                <article class="product-card card-sm"><a href="product_greenhouse.html" class="card-link"></a>
+                    <div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse"
+                            class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div>
+                    <h4 class="product-name">Mini 3</h4>
+                    <p class="product-price">$200</p>
+                    <hr class="card-divider">
+                    <p class="product-desc">Polycarbonate cold frame with wooden base. Great insulator.</p><button
+                        class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+                </article>
                 <div class="row-break"></div>
-                <article class="product-card card-lg"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 5</h4><p class="product-price">$145</p><hr class="card-divider"><p class="product-desc">Raised bed cold frame combo. Ideal for vegetable gardeners.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
-                <article class="product-card card-sm"><a href="#" class="card-link"></a><div class="image-placeholder"><img src="/images/greenhouses/minicold.png" alt="Mini Greenhouse" class="product-image" style="opacity:0.7;mix-blend-mode:multiply;"></div><h4 class="product-name">Mini 6</h4><p class="product-price">$95</p><hr class="card-divider"><p class="product-desc">Walk-in mini tunnel greenhouse. Perfect for a patio or balcony.</p><button class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button></article>
             </div>
         </section>
 
@@ -157,11 +274,13 @@
                     <div class="custom-card-bottom">
                         <div class="custom-card-left">
                             <h4 class="product-name large-name">Build your own</h4>
-                            <button class="add-to-cart custom-build">Configure <i class="fa-solid fa-hammer"></i></button>
+                            <button class="add-to-cart custom-build">Configure <i
+                                    class="fa-solid fa-hammer"></i></button>
                         </div>
                         <div class="custom-divider"></div>
                         <div class="custom-card-right">
-                            <p class="product-desc product-desc-custom">Have a specific size or layout in mind? Use our configurator to design a greenhouse tailored exactly to your space and needs.</p>
+                            <p class="product-desc product-desc-custom">Have a specific size or layout in mind? Use our
+                                configurator to design a greenhouse tailored exactly to your space and needs.</p>
                         </div>
                     </div>
                 </article>
