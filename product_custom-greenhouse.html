@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build your own | Sklénikum</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,10 +20,60 @@
             <a href="index.html"><img src="images/logo.svg" alt="Sklénikum" class="site-logo"></a>
         </div>
         <nav class="top-nav">
-            <a href="#">Shipping</a>
-            <a href="#">Contact us</a>
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html#greenhouses" class="nav-link">Greenhouses <i
+                            class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="nav-dropdown">
+                        <li><a href="index.html#polycarbonate">Polycarbonate Greenhouses</a></li>
+                        <li><a href="index.html#glass">Glass Greenhouses</a></li>
+                        <li><a href="index.html#lean-to">Lean-to Greenhouses</a></li>
+                        <li><a href="index.html#mini">Mini &amp; Cold Frames</a></li>
+                        <li><a href="index.html#custom">Custom Greenhouses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#accessories" class="nav-link">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="buyers-guide.html" class="nav-link">Buyer's Guide</a>
+                </li>
+            </ul>
         </nav>
+        <div class="header-actions">
+            <button type="button" class="cart-btn" aria-label="Open shopping cart" aria-expanded="false">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count" hidden>0</span>
+            </button>
+        </div>
     </header>
+    <hr class="top-bar-divider">
+
+    <main class="content product-page">
+        <a href="index.html#custom" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to shop</a>
+
+        <article class="product-detail product-detail-custom">
+            <div class="product-detail-image product-detail-image-large">
+                <img src="images/greenhouses/custom.png" alt="Custom Greenhouse" class="product-image">
+            </div>
+            <div class="product-detail-info">
+                <h1 class="product-name">Build your own</h1>
+                <p class="product-price">From $1,500</p>
+                <hr class="card-divider">
+                <p class="product-desc">Have a specific size or layout in mind? Use our configurator to design a greenhouse tailored exactly to your space and needs. Contact us when you are ready to order your custom build.</p>
+                <p class="product-note">Custom orders are quoted individually. Add a placeholder to your cart to save your interest — we will confirm specifications before checkout.</p>
+                <button type="button" class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Zelená 124, 460 01 Liberec</p>
+        <p>Copyright © 2025 Sklénikum</p>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="cart.js"></script>
 </body>
 
 </html>
