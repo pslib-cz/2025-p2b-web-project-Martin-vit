@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Greenhouse Configurator | Sklénikum</title>
+    <meta name="description" content="Design your perfect custom greenhouse. Choose dimensions, frame material, glazing and ventilation — get an instant price estimate.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Sklénikum" class="site-logo"></a>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="index.html#greenhouses" class="nav-link">Greenhouses <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="nav-dropdown">
+                        <li><a href="index.html#polycarbonate">Polycarbonate Greenhouses</a></li>
+                        <li><a href="index.html#glass">Glass Greenhouses</a></li>
+                        <li><a href="index.html#lean-to">Lean-to Greenhouses</a></li>
+                        <li><a href="index.html#mini">Mini &amp; Cold Frames</a></li>
+                        <li><a href="index.html#custom">Custom Greenhouses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="index.html#accessories" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="buyers-guide.html" class="nav-link">Buyer's Guide</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button type="button" class="cart-btn" aria-label="Open shopping cart" aria-expanded="false">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count" hidden>0</span>
+            </button>
+        </div>
+    </header>
+    <hr class="top-bar-divider">
+
+    <main class="content product-page">
+        <nav class="product-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="index.html#custom">Custom Greenhouses</a>
+            <span class="breadcrumb-sep">/</span>
+            <span id="breadcrumb-current">Configurator</span>
+        </nav>
+
+        <div class="cfg-layout">
+
+            <!-- ── LEFT PANEL ── -->
+            <aside class="cfg-aside">
+                <span class="product-shop-badge">Made to order</span>
+                <h1 class="cfg-title">Design your own greenhouse</h1>
+                <p class="cfg-lead">Tell us exactly what you need and we'll build it. Every greenhouse is fabricated to your specs — no compromises.</p>
+
+                <ul class="cfg-features">
+                    <li><i class="fa-solid fa-ruler-combined"></i>
+                        <div><strong>Custom dimensions</strong><span>Width 1–10 m · Length 1–15 m · Height 2–6 m</span></div>
+                    </li>
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i>
+                        <div><strong>Frame material</strong><span>Lightweight aluminium or heavy-duty steel</span></div>
+                    </li>
+                    <li><i class="fa-solid fa-sun"></i>
+                        <div><strong>Glazing options</strong><span>UV polycarbonate or tempered glass</span></div>
+                    </li>
+                    <li><i class="fa-solid fa-wind"></i>
+                        <div><strong>Ventilation</strong><span>Manual roof vents or automatic sensor-driven</span></div>
+                    </li>
+                </ul>
+
+                <!-- Live summary card -->
+                <div class="cfg-summary-card" id="cfg-summary">
+                    <div class="cfg-summary-row">
+                        <span class="cfg-summary-label">Dimensions</span>
+                        <span class="cfg-summary-val" id="sum-dims">— × — × — m</span>
+                    </div>
+                    <div class="cfg-summary-row">
+                        <span class="cfg-summary-label">Floor area</span>
+                        <span class="cfg-summary-val" id="sum-area">— m²</span>
+                    </div>
+                    <div class="cfg-summary-row">
+                        <span class="cfg-summary-label">Frame</span>
+                        <span class="cfg-summary-val" id="sum-frame">—</span>
+                    </div>
+                    <div class="cfg-summary-row">
+                        <span class="cfg-summary-label">Glazing</span>
+                        <span class="cfg-summary-val" id="sum-glazing">—</span>
+                    </div>
+                    <div class="cfg-summary-row">
+                        <span class="cfg-summary-label">Ventilation</span>
+                        <span class="cfg-summary-val" id="sum-vent">—</span>
+                    </div>
+                    <hr class="cfg-summary-divider">
+                    <div class="cfg-summary-row cfg-price-row">
+                        <span class="cfg-summary-label">Estimated price</span>
+                        <span class="cfg-price" id="sum-price">$—</span>
+                    </div>
+                    <p class="cfg-price-note">Final price confirmed after review</p>
+                </div>
+
+                <ul class="product-shop-meta" style="margin-top:20px;">
+                    <li><i class="fa-solid fa-truck"></i> Delivery across the Czech Republic</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> 2-year structural warranty</li>
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i> Professional installation available</li>
+                </ul>
+            </aside>
+
+            <!-- ── RIGHT PANEL (form) ── -->
+            <section class="cfg-form-panel">
+                <h2 class="cfg-form-title">Configure your greenhouse</h2>
+
+                <form id="custom-config-form" class="config-form" novalidate>
+
+                    <fieldset class="cfg-fieldset">
+                        <legend class="cfg-legend"><i class="fa-solid fa-arrows-left-right-to-line"></i> Dimensions</legend>
+
+                        <div class="cfg-dim-grid">
+                            <div class="form-group">
+                                <label for="width" class="cfg-label">Width <span class="cfg-unit">m</span></label>
+                                <input type="number" id="width" name="width" min="1" max="10" step="0.1" placeholder="e.g. 4" required class="cfg-input">
+                                <span class="cfg-range-hint">1 – 10 m</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="length" class="cfg-label">Length <span class="cfg-unit">m</span></label>
+                                <input type="number" id="length" name="length" min="1" max="15" step="0.1" placeholder="e.g. 6" required class="cfg-input">
+                                <span class="cfg-range-hint">1 – 15 m</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="height" class="cfg-label">Ridge Height <span class="cfg-unit">m</span></label>
+                                <input type="number" id="height" name="height" min="2" max="6" step="0.1" placeholder="e.g. 3" required class="cfg-input">
+                                <span class="cfg-range-hint">2 – 6 m</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="cfg-fieldset">
+                        <legend class="cfg-legend"><i class="fa-solid fa-layer-group"></i> Materials &amp; Systems</legend>
+
+                        <div class="form-group">
+                            <label for="framework" class="cfg-label">Frame Material</label>
+                            <div class="cfg-select-wrap">
+                                <select id="framework" name="framework" required class="cfg-select">
+                                    <option value="aluminium">Aluminium — lightweight, rust‑resistant</option>
+                                    <option value="steel">Steel — robust, heavy‑duty</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down cfg-select-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="glazing" class="cfg-label">Glazing Type</label>
+                            <div class="cfg-select-wrap">
+                                <select id="glazing" name="glazing" required class="cfg-select">
+                                    <option value="polycarbonate">Polycarbonate — UV‑protected panels</option>
+                                    <option value="glass">Tempered Glass — premium clarity</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down cfg-select-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ventilation" class="cfg-label">Ventilation System</label>
+                            <div class="cfg-select-wrap">
+                                <select id="ventilation" name="ventilation" required class="cfg-select">
+                                    <option value="manual">Manual Roof Vents</option>
+                                    <option value="automatic">Automatic Sensor‑Driven Vents</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down cfg-select-icon"></i>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="cfg-submit">
+                        <i class="fa-solid fa-ruler"></i>
+                        Get Quote
+                    </button>
+                    <p class="cfg-submit-note">We'll review your configuration and send a detailed quote within 24 hours.</p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Zelená 124, 460 01 Liberec</p>
+        <p>Copyright © 2025 Sklénikum</p>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="custom-greenhouse.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Live price estimator & summary updater
+        const BASE = 120; // $ per m²
+        const FRAME_MULT  = { aluminium: 1, steel: 1.25 };
+        const GLAZE_MULT  = { polycarbonate: 1, glass: 1.4 };
+        const VENT_ADD    = { manual: 0, automatic: 350 };
+
+        const els = {
+            width:       document.getElementById('width'),
+            length:      document.getElementById('length'),
+            height:      document.getElementById('height'),
+            framework:   document.getElementById('framework'),
+            glazing:     document.getElementById('glazing'),
+            ventilation: document.getElementById('ventilation'),
+        };
+
+        function fmt(n) { return '$' + n.toLocaleString('en-US'); }
+        function fmtNum(n) { return isNaN(n) ? '—' : n; }
+
+        function updateSummary() {
+            const w = parseFloat(els.width.value);
+            const l = parseFloat(els.length.value);
+            const h = parseFloat(els.height.value);
+            const fr = els.framework.value;
+            const gl = els.glazing.value;
+            const vn = els.ventilation.value;
+
+            const area = (w && l) ? (w * l) : NaN;
+
+            document.getElementById('sum-dims').textContent =
+                (w && l && h) ? `${fmtNum(w)} × ${fmtNum(l)} × ${fmtNum(h)} m` : '— × — × — m';
+            document.getElementById('sum-area').textContent =
+                isNaN(area) ? '— m²' : area.toFixed(1) + ' m²';
+            document.getElementById('sum-frame').textContent =
+                fr === 'aluminium' ? 'Aluminium' : 'Steel';
+            document.getElementById('sum-glazing').textContent =
+                gl === 'polycarbonate' ? 'Polycarbonate' : 'Tempered Glass';
+            document.getElementById('sum-vent').textContent =
+                vn === 'manual' ? 'Manual' : 'Automatic';
+
+            if (!isNaN(area) && h) {
+                const price = Math.round(area * BASE * FRAME_MULT[fr] * GLAZE_MULT[gl] + VENT_ADD[vn]);
+                document.getElementById('sum-price').textContent = fmt(price);
+            } else {
+                document.getElementById('sum-price').textContent = '$—';
+            }
+        }
+
+        Object.values(els).forEach(el => el.addEventListener('input', updateSummary));
+        updateSummary();
+    </script>
+</body>
+</html>

@@ -50,19 +50,42 @@
     <hr class="top-bar-divider">
 
     <main class="content product-page">
-        <a href="index.html#custom" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to shop</a>
+        <nav class="product-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="index.html#custom">Custom Greenhouses</a>
+            <span class="breadcrumb-sep">/</span>
+            <span>Build your own</span>
+        </nav>
 
         <article class="product-detail product-detail-custom">
-            <div class="product-detail-image product-detail-image-large">
-                <img src="images/greenhouses/custom.png" alt="Custom Greenhouse" class="product-image">
-            </div>
-            <div class="product-detail-info">
+            <div class="product-detail-info product-shop-info" style="max-width:640px">
+                <span class="product-shop-badge">Made to order</span>
                 <h1 class="product-name">Build your own</h1>
-                <p class="product-price">From $1,500</p>
                 <hr class="card-divider">
-                <p class="product-desc">Have a specific size or layout in mind? Use our configurator to design a greenhouse tailored exactly to your space and needs. Contact us when you are ready to order your custom build.</p>
-                <p class="product-note">Custom orders are quoted individually. Add a placeholder to your cart to save your interest — we will confirm specifications before checkout.</p>
-                <button type="button" class="add-to-cart">Add to cart <i class="fa-solid fa-bag-shopping"></i></button>
+
+                <p class="product-desc product-shop-desc">Have a specific size or layout in mind? Use our configurator to design a greenhouse tailored exactly to your space and needs.</p>
+
+                <ul class="product-features">
+                    <li><i class="fa-solid fa-check"></i> Custom dimensions up to 10 × 15 m</li>
+                    <li><i class="fa-solid fa-check"></i> Choice of aluminium or steel frame</li>
+                    <li><i class="fa-solid fa-check"></i> Polycarbonate or tempered glass glazing</li>
+                    <li><i class="fa-solid fa-check"></i> Manual or automatic ventilation</li>
+                </ul>
+
+                <div class="product-shop-actions">
+                    <div class="product-shop-buy">
+                        <a href="custom_greenhouse.html" class="add-to-cart product-shop-add">
+                            <i class="fa-solid fa-ruler"></i> Configure
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="product-shop-meta">
+                    <li><i class="fa-solid fa-truck"></i> Delivery across the Czech Republic</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> 2-year structural warranty</li>
+                    <li><i class="fa-solid fa-screwdriver-wrench"></i> Professional installation available</li>
+                </ul>
             </div>
         </article>
     </main>
